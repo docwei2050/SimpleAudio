@@ -1,0 +1,3 @@
+include ':audio-device'
+include ':app'
+rootProject.name = "SimpleAudio"
