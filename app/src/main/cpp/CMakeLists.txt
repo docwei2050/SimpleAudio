@@ -39,6 +39,7 @@ set (DEBUG_UTILS_SOURCES ${OBOE_DIR}/include/debug-utils/trace.cpp)
 
 # App specific sources
 set (APP_SOURCES
+        jni_bridge.cpp
         HelloOboeEngine.cpp
     SoundGenerator.cpp
     LatencyTuningCallback.cpp
