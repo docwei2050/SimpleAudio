@@ -133,6 +133,7 @@ void HelloOboeEngine::restart() {
 oboe::Result HelloOboeEngine::start() {
     std::lock_guard<std::mutex> lock(mLock);
 
+    //创建流数据
     auto result = createPlaybackStream();
     if (result == oboe::Result::OK){
         mAudioSource =  std::make_shared<SoundGenerator>(mStream->getSampleRate(),

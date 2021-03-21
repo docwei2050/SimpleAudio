@@ -27,9 +27,7 @@ extern "C" {
  * @return a pointer to the audio engine. This should be passed to other methods
  */
 JNIEXPORT jlong JNICALL
-Java_com_docwei_simpleaudio_PlaybackEngine_native_1createEngine(
-        JNIEnv *env,
-        jclass /*unused*/) {
+Java_com_docwei_simpleaudio_PlaybackEngine_native_1createEngine(JNIEnv *env,jclass /*unused*/) {
     // We use std::nothrow so `new` returns a nullptr if the engine creation fails
     HelloOboeEngine *engine = new(std::nothrow) HelloOboeEngine();
     if (engine == nullptr) {
