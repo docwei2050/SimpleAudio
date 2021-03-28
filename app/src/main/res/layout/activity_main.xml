@@ -11,5 +11,22 @@
        android:onClick="enterOboe"
        android:id="@+id/oboe_btn"
        android:textAllCaps="false"
+
+       android:layout_height="wrap_content"/>
+   <Button
+       android:layout_width="match_parent"
+       android:text="Media Recorder录音"
+       android:background="#44E91E63"
+       android:layout_marginTop="10dp"
+       android:onClick="enterMediaRecorder"
+       android:textAllCaps="false"
+       android:layout_height="wrap_content"/>
+   <Button
+       android:layout_width="match_parent"
+       android:text="Audio Recorder录音"
+       android:background="#44FF9800"
+       android:layout_marginTop="10dp"
+       android:onClick="enterAudioRecorder"
+       android:textAllCaps="false"
        android:layout_height="wrap_content"/>
 </LinearLayout>

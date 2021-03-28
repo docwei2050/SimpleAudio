@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent" >
+    <TextView
+        android:layout_width="match_parent"
+        android:text="audioRecord录制"
+        android:gravity="center"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="开始录制"
+        android:id="@+id/btn_record"
+        android:layout_marginTop="100dp"
+        android:background="#441ab19c"
+        android:onClick="record"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="audioTrack播放PCM"
+        android:background="#441ab19c"
+        android:textAllCaps="false"
+        android:onClick="audioTrackPlay"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="pcm转成wav"
+        android:textAllCaps="false"
+        android:onClick="changeFormatWav"
+        android:background="#441ab19c"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="使用Mediaplayer播放wav"
+        android:background="#441ab19c"
+        android:textAllCaps="false"
+        android:onClick="playWav"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

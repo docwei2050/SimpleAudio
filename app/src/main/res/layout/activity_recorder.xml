@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent" >
+    <TextView
+        android:layout_width="match_parent"
+        android:text="MediaRecorder录制+ MediaPlayer播放"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="开始录制"
+        android:layout_marginTop="100dp"
+        android:background="#441ab19c"
+        android:onClick="startRecord"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="结束录制"
+        android:onClick="stopRecord"
+        android:background="#441ab19c"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="play"
+        android:background="#441ab19c"
+        android:onClick="play"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
